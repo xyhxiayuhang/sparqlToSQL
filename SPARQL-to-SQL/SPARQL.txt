@@ -1,0 +1,8 @@
+prefix medical:<http://localhost:2020/resource/>
+select ?EMPI
+where{
+?patient :EMPI ?EMPI.
+?patient :hospitalInformation ?edge.
+?edge :inHospitalTime ?time.
+filter(?time <"2015-10-01"^^xsd:date).
+}

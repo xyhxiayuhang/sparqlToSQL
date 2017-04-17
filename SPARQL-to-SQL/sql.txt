@@ -1,0 +1,3 @@
+select distinct entity.name
+from entity,attribute attribute_1,attribute attribute_2,attribute attribute_3
+where attribute_1.entity_id=entity.entity_id and attribute_1.entity_id=attribute_2.entity_id and attribute_2.attr_id=11 and attribute_2.attr_value=attribute_3.entity_id and attribute_3.attr_id=51 and attribute_3.attr_value<'2015-10-01'
